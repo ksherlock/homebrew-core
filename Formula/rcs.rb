@@ -20,13 +20,6 @@ class Rcs < Formula
     sha256 "4681c5fae05b4f4b267a9bccc9032de2b216437105d591ec5de7a10ca31e0441" => :el_capitan
   end
 
-  # Fixes use of _Noreturn attribute
-  # This patch is a commit from the upstream git repo; will be in the next release.
-  patch do
-    url "https://raw.githubusercontent.com/Homebrew/formula-patches/3fff7c990b8df4174045834b9c1210e7736ff5a4/rcs/noreturn.patch"
-    sha256 "ac2f5ad1df932361e19c6184d2dfddfbe7664184ac4c24a3224c85707cd4da9f"
-  end
-
   if MacOS.version >= :high_sierra
     patch :p0 do
       url "https://raw.githubusercontent.com/macports/macports-ports/b76d1e48dac/editors/nano/files/secure_snprintf.patch"
