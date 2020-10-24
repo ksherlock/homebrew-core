@@ -1,10 +1,10 @@
 class I386ElfGdb < Formula
   desc "GNU debugger for i386-elf cross development"
   homepage "https://www.gnu.org/software/gdb/"
-  url "https://ftp.gnu.org/gnu/gdb/gdb-9.2.tar.xz"
-  mirror "https://ftpmirror.gnu.org/gdb/gdb-9.2.tar.xz"
-  sha256 "360cd7ae79b776988e89d8f9a01c985d0b1fa21c767a4295e5f88cb49175c555"
-  license "GPL-2.0"
+  url "https://ftp.gnu.org/gnu/gdb/gdb-10.1.tar.xz"
+  mirror "https://ftpmirror.gnu.org/gdb/gdb-10.1.tar.xz"
+  sha256 "f82f1eceeec14a3afa2de8d9b0d3c91d5a3820e23e0a01bbb70ef9f0276b62c0"
+  license "GPL-3.0-or-later"
   head "https://sourceware.org/git/binutils-gdb.git"
 
   livecheck do
@@ -17,7 +17,7 @@ class I386ElfGdb < Formula
     sha256 "8dad06d6eea6ec145763819d982916d590edd45b40e4c91e328bba76f0aac0bf" => :high_sierra
   end
 
-  depends_on "python@3.8"
+  depends_on "python@3.9"
   depends_on "xz" # required for lzma support
 
   conflicts_with "gdb", because: "both install include/gdb, share/gdb and share/info"
