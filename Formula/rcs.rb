@@ -4,6 +4,7 @@ class Rcs < Formula
   url "https://ftp.gnu.org/gnu/rcs/rcs-5.9.4.tar.xz"
   mirror "https://ftpmirror.gnu.org/rcs/rcs-5.9.4.tar.xz"
   sha256 "063d5a0d7da1821754b80c639cdae2c82b535c8ff4131f75dc7bbf0cd63a5dff"
+  license "GPL-3.0-or-later"
   revision 1
 
   livecheck do
